@@ -1,0 +1,12 @@
+<h3>Directives</h3>
+<button 
+    class="btn btn-primary" 
+    (click) = 'showSecret = !showSecret'>Display Details</button>
+<p *ngIf="showSecret" >Secret password: Cat Fish</p>
+<div>
+    <p>logs:</p>
+    <span 
+    *ngFor="let num of logClicks"
+    [ngClass]="{'more-clicks': num >= 5}">{{num}}</span>
+</div>
+
