@@ -1,0 +1,15 @@
+<div class="container">
+  <br><br>
+  <h2>Game Run</h2>
+  <br>
+  <app-game-control (currNum) = "someFunc($event)"></app-game-control>
+  <div class="row">
+    <div class="col-sm-5">
+      <h4>Even</h4>
+      <app-even *ngFor="let number of even_arr" [number] = "number"></app-even>
+      <h4>Odd</h4>
+      <app-odd *ngFor ="let number of odd_arr" [number] = "number"></app-odd>
+    </div>
+    <div class="col-sm-7"></div>
+  </div>
+</div>
